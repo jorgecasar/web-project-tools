@@ -1,0 +1,40 @@
+{
+  "name": "@jorgecasar/jsdoc-config",
+  "version": "0.0.1",
+  "description": "Default config for jsdoc",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgecasar/web-project-tools",
+    "directory": "config/jsdoc"
+  },
+  "author": "Jorge del Casar <jorge.casar@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-jsdoc": "^36.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-wc": "^1.0.0"
+  },
+  "files": [
+    "src",
+    "*.js",
+    "*.json"
+  ],
+  "exports": {
+    ".": "./jsdoc-config.json",
+    "./package.json": "./package.json",
+    "./jsdoc-config.json": "./jsdoc-config.json"
+  }
+}

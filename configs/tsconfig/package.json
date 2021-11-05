@@ -1,0 +1,43 @@
+{
+  "name": "@jorgecasar/tsconfig",
+  "version": "0.0.1",
+  "description": "Default config for eslint, prettier and typescript",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgecasar/web-project-tools",
+    "directory": "config/tsconfig"
+  },
+  "author": "Jorge del Casar <jorge.casar@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "npm-run-all": "^4.0.0",
+    "typescript": "^4.0.0"
+  },
+  "scripts": {
+    "types": "run-s types:clear types:build",
+    "types:build": "tsc -p tsconfig.build-types.json",
+    "types:clear": "rimraf types/"
+  },
+  "files": [
+    "src",
+    "*.js",
+    "*.json"
+  ],
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json",
+    "./tsconfig.json": "./tsconfig.json",
+    "./tsconfig.build-types.json": "./tsconfig.build-types.json"
+  }
+}

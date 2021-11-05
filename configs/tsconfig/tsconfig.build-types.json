@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Build types",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "noEmit": false
+  },
+  "include": ["**/*.js"],
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*",
+    "**/coverage/*",
+    "**/storybook-static/**/*",
+    "**/docs/**/*"
+  ]
+}

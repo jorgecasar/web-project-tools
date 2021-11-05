@@ -1,0 +1,11 @@
+{
+  "sourceType": "module",
+  "plugins": ["plugins/markdown"],
+  "source": {
+    "include": ["src", "package.json", "README.md"]
+  },
+  "opts": {
+    "destination": "./docs/",
+    "recurse": true
+  }
+}

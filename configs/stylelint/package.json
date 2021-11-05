@@ -1,0 +1,38 @@
+{
+  "name": "@jorgecasar/stylelint-config",
+  "version": "0.0.1",
+  "description": "Default config for stylelint",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgecasar/web-project-tools",
+    "directory": "config/stylelint"
+  },
+  "author": "Jorge del Casar <jorge.casar@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "stylelint": "^14.0.0",
+    "stylelint-config-idiomatic-order": "^8.1.0"
+  },
+  "dependencies": {
+    "stylelint": "^14.0.0",
+    "stylelint-config-idiomatic-order": "^8.1.0"
+  },
+  "files": [
+    "src",
+    "*.js",
+    "*.json"
+  ],
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json",
+    "./stylelint": "./src/stylelint.config.js"
+  },
+  "scripts": {
+    "example": "stylelint \"example/**/*.css\" --config ./src/index.js",
+    "example:fix": "npm run example -- --fix"
+  }
+}

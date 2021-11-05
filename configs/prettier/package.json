@@ -1,0 +1,31 @@
+{
+  "name": "@jorgecasar/prettier-config",
+  "version": "0.0.1",
+  "description": "Default config for prettier",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgecasar/web-project-tools",
+    "directory": "config/prettier"
+  },
+  "author": "Jorge del Casar <jorge.casar@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "prettier": "^2.0.0"
+  },
+  "dependencies": {
+    "prettier": "^2.0.0"
+  },
+  "files": [
+    "src",
+    "*.js",
+    "*.json"
+  ],
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  }
+}

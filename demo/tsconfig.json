@@ -1,0 +1,9 @@
+{
+  "extends": "@jorgecasar/tsconfig/tsconfig.build-types.json",
+  "include": ["src/**/*.js"],
+  "exclude": ["src/test"],
+  "compilerOptions": {
+    "declarationDir": "./types",
+    "rootDir": "./src"
+  }
+}

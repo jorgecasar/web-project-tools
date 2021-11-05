@@ -1,0 +1,29 @@
+{
+  "name": "@jorgecasar/web-test-runner-config",
+  "version": "0.0.1",
+  "description": "Default config for web-test-runner",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgecasar/web-project-tools",
+    "directory": "config/web-test-runner"
+  },
+  "author": "Jorge del Casar <jorge.casar@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@web/test-runner": "^0.13.0"
+  },
+  "dependencies": {},
+  "files": [
+    "src",
+    "*.js",
+    "*.json"
+  ],
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  }
+}

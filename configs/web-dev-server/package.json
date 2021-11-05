@@ -1,0 +1,29 @@
+{
+  "name": "@jorgecasar/web-dev-server-config",
+  "version": "0.0.1",
+  "description": "Default config for web-dev-server",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgecasar/web-project-tools",
+    "directory": "config/web-dev-server"
+  },
+  "author": "Jorge del Casar <jorge.casar@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@web/dev-server": "^0.1.0"
+  },
+  "dependencies": {},
+  "files": [
+    "src",
+    "*.js",
+    "*.json"
+  ],
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  }
+}

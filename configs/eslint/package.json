@@ -1,0 +1,37 @@
+{
+  "name": "@jorgecasar/eslint-config",
+  "version": "0.0.1",
+  "description": "Default config for eslint",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgecasar/web-project-tools",
+    "directory": "config/eslint"
+  },
+  "author": "Jorge del Casar <jorge.casar@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@open-wc/eslint-config": "^7.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "@babel/eslint-plugin": "^7.0.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.0.2",
+    "eslint-plugin-lit": "^1.0.0",
+    "eslint-plugin-lit-a11y": "^2.0.0",
+    "eslint-plugin-no-only-tests": "^2.0.0",
+    "eslint-plugin-wc": "^1.0.0"
+  },
+  "files": [
+    "src",
+    "*.js",
+    "*.json"
+  ],
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json",
+    "./eslint": "./src/eslint.config.js"
+  }
+}

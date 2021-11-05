@@ -1,0 +1,32 @@
+{
+  "name": "@jorgecasar/custom-elements-manifest-config",
+  "version": "0.0.1",
+  "description": "Default config for custom-elements-manifest-config",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgecasar/web-project-tools",
+    "directory": "config/custom-elements-manifest"
+  },
+  "author": "Jorge del Casar <jorge.casar@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.6.0"
+  },
+  "dependencies": {
+    "@custom-elements-manifest/analyzer": "^0.6.0",
+    "cem-plugin-readme": "^0.1.0"
+  },
+  "files": [
+    "src",
+    "*.js",
+    "*.json"
+  ],
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  }
+}
